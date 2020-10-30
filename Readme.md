@@ -10,6 +10,7 @@
  4. SSIS package
     -  Publish
  
+ Note- DB connects to be changed
  
  
  
