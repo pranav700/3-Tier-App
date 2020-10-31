@@ -3,4 +3,4 @@ steps:
 # Build
 - name: 'microsoft/dotnet:sdk'
   args: [ 'build', '-c', 'Release' ]
-  dir: '3-Tier-App/WebAPI/WebAPI.sln'
+  dir: 'WebAPI/WebAPI.sln'
