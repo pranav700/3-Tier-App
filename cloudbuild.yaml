@@ -1,6 +1,6 @@
 steps:
 
 # Build
-- name: 'gcr.io/cloud-builders/dotnet'
+- name: 'microsoft/dotnet:sdk'
   args: [ 'build', '-c', 'Release' ]
   dir: '3-Tier-App/WebAPI/WebAPI.sln'
