@@ -12,4 +12,5 @@ steps:
           '--region', 'europe-west2',
           '--zone', 'a',
           'build', '-c', 'Release' ]
-  dir: 'C:\workspace\3-Tier-App\WebAPI\WebAPI.sln'        
+  dir: 'C:\workspace\3-Tier-App\WebAPI\WebAPI.sln'
+  tags: ['cloud-builders-community']
