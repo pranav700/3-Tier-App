@@ -5,12 +5,12 @@
 #RUN msbuild WebAPI.sln /p:OutputPath=c:\out
 
 # app image
-#FROM microsoft/dotnet-framework:4.6.2-windowsservercore-10.0.14393.1884
+FROM microsoft/dotnet-framework:4.6.2-windowsservercore-10.0.14393.1884
 #WORKDIR C:\hello-world
 #COPY --from=builder C:\out .
 #CMD HelloWorld.Console.exe
 
-FROM alexellisio/msbuild:12.0
+#FROM alexellisio/msbuild:12.0
 SHELL ["powershell"]
 
 COPY . 'C:\\build\\'
