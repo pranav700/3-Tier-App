@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  API_Server:
+    image: '${DOCKER_REGISTRY-}api_server'
+    build:
+      context: ./WebApplication1
+      dockerfile: Dockerfile
+    
+  Web_Server:
+    image: '${DOCKER_REGISTRY-}api_server'
+    build:
+      context: ./Angular_Website
+      dockerfile: Dockerfile
+    depends_on:
+      - API_Server

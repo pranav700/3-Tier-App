@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  angular_website:
+    image: ${DOCKER_REGISTRY-}angularwebsite
+    build:
+      context: .\Angular_Website
+      dockerfile: Dockerfile
