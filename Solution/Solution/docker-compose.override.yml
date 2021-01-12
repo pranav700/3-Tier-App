@@ -1,0 +1,13 @@
+#docker-compose.override.yml (Extended config for DEVELOPMENT env.)
+version: '3.4'
+
+services:
+   API_Server:
+     expose:
+      - "80"
+     ports:
+      - "53535:80"
+
+   Web_Server:
+      ports:
+       - "4200:80"

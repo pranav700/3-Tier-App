@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>c98ad018-c0a7-4536-ac4b-4b696473322a</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>http://{ServiceIPAddress}</DockerServiceUrl>
+    <DockerServiceName>solution</DockerServiceName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Angular_Website\.dockerignore" />
+    <None Include="Angular_Website\Dockerfile" />
+    <None Include="Angular_Website\obj\Docker\CanonicalServiceNames.cache" />
+    <None Include="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
+    <None Include="docker-compose.yml" />
+    <None Include="WebApplication1\.dockerignore" />
+    <None Include="WebApplication1\Dockerfile" />
+    <None Include="WebApplication1\obj\Docker\CanonicalServiceNames.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Angular_Website\obj\Docker\empty\" />
+    <Folder Include="WebApplication1\obj\Docker\empty\" />
+  </ItemGroup>
+</Project>

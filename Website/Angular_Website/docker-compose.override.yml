@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  angular_website:
+    ports:
+      - "4200:80"
+
