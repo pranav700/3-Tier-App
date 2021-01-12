@@ -7,8 +7,8 @@ steps:
   dir: 'CoreWebAPI/WebAPI/'
   
 # Deploy to google cloud app egnine
-  #name: 'gcr.io/cloud-builders/gcloud'
-  #args: ['app', 'deploy']
-  #dir: '3-Tier-App/'
+  name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']
+  dir: '.\bin\Release\netcoreapp2.1\publish\app.yaml'
   
   
