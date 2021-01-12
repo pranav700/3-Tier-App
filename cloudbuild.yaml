@@ -9,6 +9,6 @@ steps:
 # Deploy to google cloud app egnine
   name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
-  dir: 'CoreWebAPI/WebAPI/WebAPI/bin/Release/netcoreapp2.1/'
+  dir: 'CoreWebAPI/WebAPI/WebAPI/'
   
   
