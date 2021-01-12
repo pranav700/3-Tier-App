@@ -7,7 +7,7 @@ steps:
   dir: 'CoreWebAPI/WebAPI/'
   
 # Deploy to google cloud app egnine
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy']  
+  name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']  
   
   
