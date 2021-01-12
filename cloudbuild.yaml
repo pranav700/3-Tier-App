@@ -2,5 +2,6 @@ steps:
 
 # Build
 - name: 'microsoft/dotnet:sdk'
-  args: [ 'build', '-c', 'Release' ]
+  #args: [ 'build', '-c', 'Release' ]
+  args: ['dotnet', 'publish','-c','Release']
   dir: 'CoreWebAPI/WebAPI/'
